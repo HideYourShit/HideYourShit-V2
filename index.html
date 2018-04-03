@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+<title>Hide Your Shit V2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-    <script>
-    'use strict';
-    const osap = require('osap');
 
-    osap(`do shell script "say Hi" `);
 
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openTab('Home')">Home</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('VPN')">VPN</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('Proxy')">Proxy</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('MAC')">MAC</button>
 
-  </body>
+</div>
+
+<div id="Home" class="w3-container tab">
+  <h2>Home</h2>
+  <p>Home Page</p>
+</div>
+
+<div id="VPN" class="w3-container tab" style="display:none">
+  <h2>VPN</h2>
+  <p>VPN page </p>
+</div>
+
+<div id="Proxy" class="w3-container tab" style="display:none">
+  <h2>Proxy</h2>
+  <p>Proxy Page</p>
+</div>
+<div id="MAC" class="w3-container tab" style="display:none">
+  <h2>MAC Spoofing</h2>
+  <p>MAC spoofing page.</p>
+</div>
+
+<script>
+function openTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
 </html>
