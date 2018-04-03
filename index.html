@@ -4,39 +4,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
 <body>
+  <style>
+   canvas{ display: block; vertical-align: bottom; }
+  #particles-js{ position:fixed; width: 100%; height: 100%; background-color: rgb(50,50,50); background-image: url(""); background-repeat: no-repeat;  background-position: 50% 50%; }
+  .all{position:relative;}
+  .barunsel{background-color: rgb(90,90,90,0.9);}
+  .barsel{background-color: transparent;}
+  .font{font-family: 'Luckiest Guy'; font-size: 14px}
+  .title{font-family: 'Luckiest Guy'; font-size: 30px}
+  .barbutton{position:relative;}
+  .rainbow {
+  animation:rainbow 1s infinite;
+  }
+  @keyframes rainbow {
+  0% {color: #ff0000;}
+  10% {color: #ff8000;}
+  20% {color: #ffff00;}
+  30% {color: #80ff00;}
+  40% {color: #00ff00;}
+  50% {color: #00ff80;}
+  60% {color: #00ffff;}
+  70% {color: #0080ff;}
+  80% {color: #0000ff;}
+  90% {color: #8000ff;}
+  100% {color: #ff0080;}
+  }
+  .homeb{background: url(Images/hideyourshit.png) no-repeat;}
+  </style>
+  <!-- particles.js container --> <div id="particles-js"></div>
+  <!-- stats - count particles -->
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+  particlesJS("particles-js", {"particles":{"number":{"value":30,"density":{"enable":false,"value_area":1262.6362266116362}},"color":{"value":"#eb0000"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"Images/hideyourshit.png","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":false,"mode":"remove"},"resize":true},"modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":119.88011988011988,"size":40,"duration":2,"opacity":0.16783216783216784,"speed":3},"repulse":{"distance":75,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+  </script>
 
+<div class="w3-bar barsel all">
 
-
-<div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openTab('Home')">Home</button>
-  <button class="w3-bar-item w3-button" onclick="openTab('VPN')">VPN</button>
-  <button class="w3-bar-item w3-button" onclick="openTab('Proxy')">Proxy</button>
-  <button class="w3-bar-item w3-button" onclick="openTab('MAC')">Machine</button>
-  <button class="w3-bar-item w3-button" onclick="openTab('Settings')"><i class="fa fa-gear"></i></button>
-
+  <button id="HomeButton" class="w3-bar-item w3-button font barsel barbutton rainbow" onclick="openTab('Home'); say()">Home</button>
+  <button id="VPNButton" class="w3-bar-item w3-button font barunsel barbutton rainbow" onclick="openTab('VPN')">VPN</button>
+  <button id="ProxyButton" class="w3-bar-item w3-button font barunsel barbutton rainbow" onclick="openTab('Proxy')">Proxy</button>
+  <button id="MACButton" class="w3-bar-item w3-button font barunsel barbutton rainbow" onclick="openTab('MAC')">Machine</button>
+  <button id="SettingsButton" class="w3-bar-item w3-button font barunsel barbutton rainbow" onclick="openTab('Settings')"><i class="fa fa-gear"></i></button>
 
 </div>
 
-<div id="Home" class="w3-container tab">
-  <h2>Home</h2>
-  <p>Home Page</p>
+<div id="Home" class="w3-container tab all ">
+
+  <h2 class="w3-center title rainbow">Hide Your Shit</h2>
+<a class="twitter-timeline" data-lang="en" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/HideYourShitAPP?ref_src=twsrc%5Etfw">Tweets by HideYourShitAPP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-<div id="VPN" class="w3-container tab" style="display:none">
+<div id="VPN" class="w3-container tab all homeb" style="display:none">
   <h2>VPN</h2>
   <p>VPN page </p>
 </div>
 
-<div id="Proxy" class="w3-container tab" style="display:none">
+<div id="Proxy" class="w3-container tab all" style="display:none">
   <h2>Proxy</h2>
   <p>Proxy Page</p>
 </div>
-<div id="MAC" class="w3-container tab" style="display:none">
+<div id="MAC" class="w3-container tab all" style="display:none">
   <h2>MAC Spoofing</h2>
   <p>MAC spoofing page.</p>
 </div>
-<div id="Settings" class="w3-container tab" style="display:none">
+<div id="Settings" class="w3-container tab all" style="display:none">
   <h2>Settings</h2>
   <p>Settings page .</p>
 </div>
@@ -49,8 +83,16 @@ function openTab(tabName) {
        x[i].style.display = "none";
     }
     document.getElementById(tabName).style.display = "block";
+    var z = document.getElementsByClassName("barbutton");
+    var q;
+    for (q = 0; q < z.length; q++) {
+       z[q].classList.remove("barsel");
+       z[q].classList.add("barunsel");
+    }
+    document.getElementById(tabName +"Button").classList.add("barsel");
 
 }
+
 </script>
 
 </body>
