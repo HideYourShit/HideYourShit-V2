@@ -3,6 +3,7 @@
 <title>Hide Your Shit V2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 
 
@@ -11,7 +12,9 @@
   <button class="w3-bar-item w3-button" onclick="openTab('Home')">Home</button>
   <button class="w3-bar-item w3-button" onclick="openTab('VPN')">VPN</button>
   <button class="w3-bar-item w3-button" onclick="openTab('Proxy')">Proxy</button>
-  <button class="w3-bar-item w3-button" onclick="openTab('MAC')">MAC</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('MAC')">Machine</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('Settings')"><i class="fa fa-gear"></i></button>
+
 
 </div>
 
@@ -33,6 +36,10 @@
   <h2>MAC Spoofing</h2>
   <p>MAC spoofing page.</p>
 </div>
+<div id="Settings" class="w3-container tab" style="display:none">
+  <h2>Settings</h2>
+  <p>Settings page .</p>
+</div>
 
 <script>
 function openTab(tabName) {
@@ -42,6 +49,7 @@ function openTab(tabName) {
        x[i].style.display = "none";
     }
     document.getElementById(tabName).style.display = "block";
+
 }
 </script>
 
