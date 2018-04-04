@@ -1,0 +1,10 @@
+version: 2.0.0
+files:
+  - url: HideYourShit-2.0.0-mac.zip
+    sha512: ff8+bAVARX7yu3Z/q4pWGocKmX4+fusPbPLvjGdQ/zNyaFiYyc5aZq4/AFAwVQMe2/mAYPfLfwDypYcLXoqTHw==
+  - url: HideYourShit-2.0.0.dmg
+    sha512: 5kQaqU8m86R6hUaPWROSz99HWR0NWOTlx88yeMYGf7KcVD4kQB9ifM2UMcx+ms8IWW+hi6nnEPOhp7HRY9TKMw==
+    size: 49386659
+path: HideYourShit-2.0.0-mac.zip
+sha512: ff8+bAVARX7yu3Z/q4pWGocKmX4+fusPbPLvjGdQ/zNyaFiYyc5aZq4/AFAwVQMe2/mAYPfLfwDypYcLXoqTHw==
+releaseDate: '2018-04-03T23:48:58.144Z'

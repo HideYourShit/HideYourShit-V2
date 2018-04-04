@@ -1,0 +1,8 @@
+directories:
+  output: dist
+  buildResources: build
+appId: net.hideyourshit.app
+publish:
+  provider: github
+  token: c0fc926c8b488ac1a698eeedcf580dc59f38ef0c
+electronVersion: 1.8.4

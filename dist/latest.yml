@@ -1,0 +1,9 @@
+version: 1.0.0
+files:
+  - url: HideYourShit-Setup-1.0.0.exe
+    sha512: mS3Jcvmz+tZAd0cw+xjuCpnYkrcu+hkOuWtYyeCa/wPCTX4QJWFWeV0rU4GI5ox2LXARl7/vjqAtZbEOR6w5SA==
+    size: 36297059
+path: HideYourShit-Setup-1.0.0.exe
+sha512: mS3Jcvmz+tZAd0cw+xjuCpnYkrcu+hkOuWtYyeCa/wPCTX4QJWFWeV0rU4GI5ox2LXARl7/vjqAtZbEOR6w5SA==
+sha2: 18fe381cfa6ce8265f2546c5f9db6e238ca2162fc11c807d371793b792c6b0b9
+releaseDate: '2018-04-03T23:41:05.973Z'

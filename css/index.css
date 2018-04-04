@@ -1,0 +1,93 @@
+/*
+_   _ _     _       __   __                 _____ _     _ _
+| | | (_)   | |      \ \ / /                /  ___| |   (_) |
+| |_| |_  __| | ___   \ V /___  _   _ _ __  \ `--.| |__  _| |_
+|  _  | |/ _` |/ _ \   \ // _ \| | | | '__|  `--. \ '_ \| | __|
+| | | | | (_| |  __/   | | (_) | |_| | |    /\__/ / | | | | |_
+\_| |_/_|\__,_|\___|   \_/\___/ \__,_|_|    \____/|_| |_|_|\__|
+
+*/
+.shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 2s;
+    /* When the animation is finished, start again */
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.wrapper1{
+    text-align: center;
+}
+
+.button1 {
+    position: absolute;
+    top: 50%;
+}
+.invisdiv{
+  height:20px;
+  background-color:transparent;
+}
+.invisdiv2{
+  height:10px;
+  background-color:transparent;
+}
+.button1{
+  padding-left: 25px;
+}
+.noselect {
+-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+.footer {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+}
+ canvas{ display: block; vertical-align: bottom; }
+#particles-js{ position:fixed; width: 100%; height: 100%; background-color: rgb(50,50,50); background-image: url(""); background-repeat: no-repeat;  background-position: 50% 50%; }
+.all{position:relative;}
+.barunsel{background-color: rgb(90,90,90,0.9);}
+.barsel{background-color: rgb(90,90,90);filter:alpha(50);opacity: 0.5;}
+.font{font-family: 'Luckiest Guy'; font-size: 14px}
+.title{font-family: 'Luckiest Guy'; font-size: 30px}
+.barbutton{position:relative;}
+.rainbow {
+animation:rainbow 2s infinite;
+}
+@keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+.homeb{background: url(Images/hideyourshit.png) no-repeat;}

@@ -1,23 +1,29 @@
 {
   "name": "HideYourShit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "HideYourShitV2",
-  "main": "main.js",
+  "main": "js/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "build --mac",
+    "ship": "build --mac -p always"
   },
   "repository": "https://github.com/HideYourShit/HideYourShit-V2",
   "author": "Ryan Trattner",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^1.8.4",
+    "electron-builder": "^20.8.1"
   },
   "dependencies": {
+    "electron-debug": "^1.5.0",
+    "electron-updater": "^2.21.4",
     "is-online": "^7.0.0",
     "menubar": "^5.2.3",
     "node-getmac": "^1.0.3",
     "node-openvpn": "^0.1.0",
     "osap": "^1.0.2",
+    "public-ip": "^2.4.0",
     "shelljs": "^0.8.1"
   }
 }
