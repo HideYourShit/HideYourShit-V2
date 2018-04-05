@@ -2,7 +2,7 @@
   "name": "HideYourShit",
   "version": "2.0.0",
   "description": "HideYourShitV2",
-  "main": "js/main.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "build --mac",
@@ -23,6 +23,7 @@
     "node-getmac": "^1.0.3",
     "node-openvpn": "^0.1.0",
     "osap": "^1.0.2",
+    "pretty-checkbox": "^3.0.3",
     "public-ip": "^2.4.0",
     "shelljs": "^0.8.1"
   }

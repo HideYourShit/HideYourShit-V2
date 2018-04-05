@@ -31,9 +31,6 @@ exports.internet = function(){
 }
 exports.ip = function(){
 
-  publicIp.v4().then(ip => {
-      return(ip);
-  });
-  return "untracable";
+  return shell.exec("dig +short myip.opendns.com @resolver1.opendns.com").toString();
 
 }

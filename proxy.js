@@ -11,14 +11,20 @@ _   _ _     _       __   __                 _____ _     _ _
 /*----
 Modules
 ----*/
-var shell = require('shelljs');
+const process = require('child_process');   // The power of Node.JS
+
+const shell = require('shelljs');
 const osap = require('osap');
 const isOnline = require('is-online');
+const tools = require('./tools.js');
+      shell.config.execPath = '/usr/local/bin/node';
+
+
 
 /*----
 Proxy Lists
 ----*/
-  var https = {
+  var proxylist = {
     "USA1" : "173.255.143.184 80",
     "USA2" : "75.66.83.12 80",
     "USA3" : "107.170.237.191 80",
@@ -39,25 +45,41 @@ Proxy Lists
     "RU1" : "5.141.252.74 8080",
     "RU2" : "91.221.61.242 3128",
 
-  };
-  var sat= {
-    "SAT1": "141.105.162.190 8080",
-    "SAT2": "81.199.154.115 8080",
-    "SAT3": "141.105.161.234 8080",
-    "SATsocks4": "212.21.56.255 1080",
-    "SAThttp": "141.105.161.238 8080",
+    "MEX1" : "200.94.75.212 3128",
+    "MEX2" : "187.191.29.210 8000",
+
+    "CA1" : "65.97.222.152 8080",
+    "CA2" : "174.92.232.153 8080",
+
+    "BRZ1" : "187.106.104.172 3218",
+    "BRZ2" : "187.115.4.145 3218",
+
+    "SA1" : "154.127.60.40 8080",
+    "SA2" : "154.127.60.103 8080",
+
+    "IN1" : "203.194.109.142 3218",
+    "IN2" : "117.218.50.134 6588",
+
+    "GE1" : "176.9.148.229 3218",
+    "GE2" : "176.9.148.253 3218",
+
+    "FR1" : "37.187.101.95 8888",
+    "GE2" : "92.222.237.46 8898",
+
+    "SAT": "141.105.161.238 8080"
+
+
+
   };
 
 /*----
 Module Exports
 ----*/
 
-  exports.connect = function(type, name){
+  exports.connect = function(name){
 
-    if(type =="HTTPS")
-      shell.exec('networksetup -setwebproxy "Wi-Fi" ' + https[name], {silent:true});
-    if(type =="SAT")
-      shell.exec('networksetup -setwebproxy "Wi-Fi" ' + sat[name], {silent:true});
+    shell.exec('networksetup -setwebproxy "Wi-Fi" ' + proxylist[name], {silent:true});
+
     if (this.status())
       return true;
     return false;
@@ -75,33 +97,23 @@ Module Exports
 
   exports.status = function(){
 
-    if (shell.exec('networksetup -getwebproxy Wi-Fi', {silent:true}).includes("Yes"))
+    var s = shell.exec('networksetup -getwebproxy Wi-Fi', {silent:true}).toString();
+    if (s.includes("Yes"))
       return true;
     return false;
 
   }
 
-  exports.listproxies = function(type){
+  exports.proxylist = function(){
 
-    if (type == "HTTPS")
-      return https;
-    if (type == "SAT")
-      return sat;
+      return listproxies;
 
   }
 
-  exports.testconnect = function(){
 
-    isOnline().then(online => {
-      return true;
-    });
-    return false;
-
-
-  }
 
   exports.getCurrent = function(){
 
-    return shell.exec("networksetup -getwebproxy Wi-Fi | awk '/Server:/ {host=$2} /Port: / {port=$2} END { printf \"%s\", host}'", {silent:true}).toString();
-
+    if(this.status()) {return shell.exec("networksetup -getwebproxy Wi-Fi | awk '/Server:/ {host=$2} /Port: / {port=$2} END { printf \"%s\", host}'", {silent:true}).toString();}
+    return tools.ip();
   }

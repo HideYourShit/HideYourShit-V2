@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 <html>
-<title>Hide Your Shit V2</title>
+<title>Hide Your Shit Dev Build</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="index.css">
 <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<body>
+<script src="index.js"></script>
+<body onload="updateALL();">
+
 
   <div id="particles-js"></div>
 <script>
-particlesJS("particles-js", {"particles":{"number":{"value":30,"density":{"enable":false,"value_area":1262.6362266116362}},"color":{"value":"#eb0000"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"Images/hideyourshit.png","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":false,"mode":"remove"},"resize":true},"modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":119.88011988011988,"size":40,"duration":2,"opacity":0.16783216783216784,"speed":3},"repulse":{"distance":75,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+particlesJS("particles-js", {"particles":{"number":{"value":30,"density":{"enable":false,"value_area":1262.6362266116362}},"color":{"value":"#eb0000"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"Images/hideyourshit.png","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":false,"mode":"remove"},"resize":true},"modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":119.88011988011988,"size":40,"duration":2,"opacity":0.16783216783216784,"speed":3},"repulse":{"distance":75,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});;
 
 </script>
 
@@ -34,56 +34,108 @@ particlesJS("particles-js", {"particles":{"number":{"value":30,"density":{"enabl
 
 <div id="Home" class="w3-display-container tab all shake w3-rotate" style="height:300px;background-image:url('Images/hideyourshit.png')">
 
-  <h2 class="w3-center title rainbow noselect">Hide Your Shit</h2>
+  <h2 class="w3-center title rainbow noselect">Hide Your Shit V2 </h2>
+  <h2 class="w3-center font rainbow noselect">By github.com/RTISCOOL</h2>
+
+  <div class="invisdiv"></div>
+  <div class="invisdiv"></div>
+  <div class="invisdiv"></div>
+  <div class="invisdiv"></div>
+
+  <div class="invisdiv"></div>
+  <div class="invisdiv"></div>
+  <div class="invisdiv"></div>
+
+
+
  <!-- <a class="twitter-timeline" data-lang="en" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/HideYourShitAPP?ref_src=twsrc%5Etfw">Tweets by HideYourShitAPP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 
 </div>
 
-<div id="VPN" class="w3-container tab all homeb" style="display:none">
-  <h2>VPN</h2>
-  <p>VPN page </p>
+<div id="VPN" class="w3-container tab all homeb" style="display:none;height:300px;background-image:url('Images/hideyourshit.png')">
+  <h2 class="w3-center title rainbow noselect">VPN </h2>
+  <div class="w3-card">
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label all  rainbow title2" for="defaultCheck1">
+  Satellite VPN?
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input all font rainbow" type="checkbox" value="" id="defaultCheck2">
+  <label class="form-check-label all  rainbow title2" for="defaultCheck2">
+  Firewalled VPN?
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input all font rainbow" type="checkbox" value="" id="defaultCheck2">
+  <label class="form-check-label all  rainbow title2" for="defaultCheck2">
+  Double VPN?
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input all font rainbow" type="checkbox" value="" id="defaultCheck2">
+  <label class="form-check-label all  rainbow title2" for="defaultCheck2">
+  Torrent Access?
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input all font rainbow" type="checkbox" value="" id="defaultCheck2">
+  <label class="form-check-label all  rainbow title2" for="defaultCheck2">
+  Packet Obvuscation?
+  </label>
+</div>
+<button id="VPNBUTTON" class="w3-btn w3-border w3-border-red w3-round-large all font rainbow w3-center" onclick="vpnButton()">Connect</button>
+<div id="vpnthing" class="alert alert-danger footer" role="alert">Proxy Disabled Current IP:</div>
+
+</div>
 </div>
 
-<div id="Proxy" class="w3-container tab all shake" style="display:none;">
+<div id="Proxy" class="w3-container tab all shake" style="display:none;background-image:url('Images/hideyourshit.png')">
   <div class="w3-display-container all" style="height:300px;">
     <div class="invisdiv2 all"></div>
 
     <div class="w3-container">
-    <img src="Images/sat.png"  align="left">
-    <button class="w3-btn w3-border w3-border-red w3-round-large all font rainbow w3-center" onclick="proxyButton()">Connect</button>
-    <img src="Images/sat2.png"  align="right">
+    <img src="Images/sat.png"  align="left" onclick="setProxy('SAT');updateALL();">
+    <button id="proxyButton1" class="w3-btn w3-border w3-border-red w3-round-large all font rainbow w3-center" onclick="proxyButton()">Click Map To Connect</button>
     </div>
-    <div class="invisdiv all"></div>
-   <img class="all center w3-display-center"src="Images/map.png" usemap="#ProxyMap">
+   <img class="all  w3-display-center"src="Images/map.png" usemap="#ProxyMap">
 <map name="ProxyMap">
-    <area target="" alt="USA" title="USA" href='javascript:setProxy("USA1")' coords="138,98,32,54" shape="rect">
-    <area target="" alt="MEX" title="MEX" href='javascript:setProxy("MEX1")' coords="31,97,106,131,64,161" shape="rect">
-    <area target="" alt="CA" title="CA" href='javascript:setProxy("CA1")' coords="139,55,37,1" shape="rect">
-    <area target="" alt="BRZ" title="BRZ" href='javascript:setProxy("BRZ1")' coords="84,138,155,237" shape="rect">
-    <area target="" alt="AU" title="AU" href='javascript:setProxy("AU1")' coords="364,131,488,239" shape="rect">
-    <area target="" alt="SA" title="SA" href='javascript:setProxy("SA1")' coords="308,225,183,86" shape="rect">
-    <area target="" alt="UK" title="UK" href='javascript:setProxy("UK1")' coords="184,24,221,57" shape="rect">
-    <area target="" alt="RU" title="RU" href='javascript:setProxy("RU1")' coords="265,0,435,65" shape="rect">
-    <area target="" alt="CN" title="CN" href='javascript:setProxy("CN1")' coords="344,65,413,125" shape="poly">
-    <area target="" alt="IN" title="IN" href='javascript:setProxy("IN1")' coords="344,146,309,67" shape="rect">
-    <area target="" alt="GE" title="GE" href='javascript:setProxy("GE1")' coords="221,0,263,83" shape="rect">
-    <area target="" alt="FR" title="FR" href='javascript:setProxy("FR1")' coords="184,61,219,85" shape="rect">
+    <area target="" alt="USA" title="USA" href='javascript:setProxy("USA1");updateALL()' coords="138,98,32,54" shape="rect">
+    <area target="" alt="MEX" title="MEX" href='javascript:setProxy("MEX1");updateALL()' coords="31,97,106,131,64,161" shape="rect">
+    <area target="" alt="CA" title="CA" href='javascript:setProxy("CA1");updateALL()' coords="139,55,37,1" shape="rect">
+    <area target="" alt="BRZ" title="BRZ" href='javascript:setProxy("BRZ1");updateALL()' coords="84,138,155,237" shape="rect">
+    <area target="" alt="AU" title="AU" href='javascript:setProxy("AU1");updateALL()' coords="364,131,488,239" shape="rect">
+    <area target="" alt="SA" title="SA" href='javascript:setProxy("SA1");updateALL()' coords="308,225,183,86" shape="rect">
+    <area target="" alt="UK" title="UK" href='javascript:setProxy("UK1");updateALL()' coords="184,24,221,57" shape="rect">
+    <area target="" alt="RU" title="RU" href='javascript:setProxy("RU1");updateALL()' coords="265,0,435,65" shape="rect">
+    <area target="" alt="CN" title="CN" href='javascript:setProxy("CN1");updateALL()' coords="344,65,413,125" shape="poly">
+    <area target="" alt="IN" title="IN" href='javascript:setProxy("IN1");updateALL()' coords="344,146,309,67" shape="rect">
+    <area target="" alt="GE" title="GE" href='javascript:setProxy("GE1");updateALL()' coords="221,0,263,83" shape="rect">
+    <area target="" alt="FR" title="FR" href='javascript:setProxy("FR1");updateALL()' coords="184,61,219,85" shape="rect">
 </map>
 </div>
 
 
- <div id="proxything" class="alert alert-danger footer" role="alert">Proxy Disabled Current IP: <script>proxy.getCurrent()</script></div>
+ <div id="proxything" class="alert alert-danger footer" role="alert">Proxy Disabled Current IP:</div>
 
 </div>
 
-<div id="MAC" class="w3-container tab all" style="display:none">
-  <h2>MAC Spoofing</h2>
-  <p>MAC spoofing page.</p>
+<div id="MAC" class="w3-display-container tab all shake" style="display:none;height:300px;background-image:url('Images/hideyourshit.png')">
+  <div class="invisdiv all"></div>
+
+<div id="wrapper">
+  <button id="MACbut" class="w3-btn  w3-border w3-border-red w3-round-large all font rainbow w3-center" onclick="macButton()">Spoof Your MAC Address Now!</button>
+</div>
+  <div id="macthing" class="alert alert-danger footer" role="alert">Current MAC address:</div>
+
 </div>
 <div id="Settings" class="w3-container tab all" style="display:none">
-  <h2>Settings</h2>
-  <p>Settings page .</p>
+  <h2 class="w3-center title rainbow noselect">Hide Your Shit </h2>
+  <h2 class="w3-center title rainbow noselect">By github.com/RTISCOOL</h2>
+  <h2 class="w3-center title rainbow noselect">Development Build</h2>
+
 </div>
 
 
