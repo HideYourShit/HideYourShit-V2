@@ -5,6 +5,11 @@ MacOS VPN, Proxy, and MAC Spoofer.
 
 ![](header.png)
 
+## Screenshots
+![](screenshot1.png)
+![](screenshot2.png)
+![](screenshot3.png)
+
 ## Installation
 
 
