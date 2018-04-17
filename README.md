@@ -2,6 +2,20 @@
 
 MacOS VPN, Proxy, and MAC Spoofer.
 
+
+![](header.png)
+
+## Installation
+
+OS X 
+
+```sh
+git clone https://github.com/HideYourShit/HideYourShit-V2
+cd HideYourShit-V2
+npm install
+npm start 
+```
+
 ### Prerequisites
 
 Nodejs is required to use HideYourShit
@@ -10,6 +24,10 @@ Nodejs is required to use HideYourShit
 brew install node
 ```
 
+## Release History
+
+* 0.0.1
+    * First Commit to Github :)
 
 ## Built With
 
