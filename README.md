@@ -14,6 +14,9 @@ cd HideYourShit-V2
 npm install
 npm start 
 ```
+Create a VPN connection and name it "HYS-VPN".
+You can find information about creating a VPN connection on OSX [here](https://support.apple.com/kb/PH25513?locale=en_US).
+Please email me if you would like to use the private HYS VPN servers. 
 
 ### Prerequisites
 
