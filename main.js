@@ -2,8 +2,6 @@ var menubar = require('menubar')
 //const {autoUpdater} = require("electron-updater");
 
 var mb = menubar()
-require('electron-debug')({showDevTools: true});
-
 mb.on('ready', function ready () {
   console.log('app is ready');
   //autoUpdater.checkForUpdates();

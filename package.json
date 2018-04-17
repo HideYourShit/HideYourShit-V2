@@ -16,6 +16,7 @@
     "electron-builder": "^20.8.1"
   },
   "dependencies": {
+    "7zip-bin": "^3.1.0",
     "electron-debug": "^1.5.0",
     "electron-updater": "^2.21.4",
     "is-online": "^7.0.0",
