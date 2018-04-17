@@ -7,7 +7,6 @@ MacOS VPN, Proxy, and MAC Spoofer.
 
 ## Installation
 
-OS X 
 
 ```sh
 git clone https://github.com/HideYourShit/HideYourShit-V2
