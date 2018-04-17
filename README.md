@@ -52,3 +52,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Awesome logo designed by friend :)
 * vincentgarreau for particles js
+* @spitfireglory13 little help 
