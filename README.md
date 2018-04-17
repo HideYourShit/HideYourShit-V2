@@ -1,4 +1,5 @@
 # HideYourShit V2
+###### This is currently a development version. I have included around 20 proxies, but you have to supply your own VPN if you are cloning and running the dev build. 
 
 MacOS VPN, Proxy, and MAC Spoofer.
 
