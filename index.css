@@ -91,3 +91,12 @@ animation:rainbow 2s infinite;
 100% {color: #ff0080;}
 }
 .homeb{background: url(Images/hideyourshit.png) no-repeat;}
+
+.wrapper {
+    text-align: center;
+}
+
+.vpnbut {
+    position: absolute;
+    top: 50%;
+}
