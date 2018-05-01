@@ -15,6 +15,7 @@ Modules
 
 var shell = require('shelljs');
 const osap = require('osap');
+
 const isOnline = require('is-online');
 
 /*----
@@ -26,6 +27,7 @@ var regVPN = {
   "OOF" : "NORNAL"
 
 };
+
 
 
 /*----
